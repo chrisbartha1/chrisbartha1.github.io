@@ -191,6 +191,7 @@ rect:hover {
     cursor: pointer;
     opacity: 0.4;
     change(event, ID);
+    hoverBOY();
 }
 
 rect>p {
