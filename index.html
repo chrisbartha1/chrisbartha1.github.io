@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Chris Bartha</title>
+    <link rel="stylesheet" href="Stylesheet/styler.css" type=text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+
+<div>
+    <p>
+        <a target="_self" href="#about"><img class="icon" src="img/portrait.jpg" alt="me"></a>
+    </p>
+    <a target="_self" href="#about">
+        <p ID="author">Christopher Bartha</p>
+    </a>
+</div>
+
+
+
+
+
+<div id="about"><div class="inner">
+    <p>I am an aspiring Software Developer</p>
+    <!-- Code on Displayed Console -->
+    <div id="code">
+        <div id="console">
+            &gt; Chris.major<br/>
+            <span class="answer">&nbsp;&nbsp;=&gt; "Computer Science"<br/><br/></span>
+            &gt; Chris.coding.languages<br/>
+            <span class="answer">&nbsp;&nbsp;=&gt; My Coding Languages<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(strong-suit)<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(limited knowledge)<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(surface-level knowledge)<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript&nbsp;&nbsp;(surface-level knowledge)<br/>
+							<br/></span>
+            <span class="answer">&nbsp;&nbsp;=&gt; Future Languages<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node.js<br/>
+												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scala<br/>
+							<br/></span>
+            &gt; Chris.education<br/>
+            <span class="answer">&nbsp;&nbsp;=&gt; "California State University, Sonoma"<br/><br/></span>
+            &gt; Chris.expectedGraduation<br/>
+            <span class="answer">&nbsp;&nbsp;=&gt; "May 2023"<br/><br/></span>
+            &gt; Chris.interests<br/>
+            <span class="answer">&nbsp;&nbsp;=&gt; ["Code", "Socialising", "Learning"]<br/><br/></span>
+            &gt; Chris.projects<br/>
+            <span class="answer">&nbsp;&nbsp;=&gt; ["<a target="_self" href="project/sudoku.html">Sudoku Solver</a>",
+								 "<a target="_blank">Blank</a>",
+								 "<a target="_blank">Blank</a>"]<br/><br/></span>
+            &gt; Chris.email<br/>
+            <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="mailto:chrisbartha@yahoo.com">chrisbartha@yahoo.com</a>"<br/><br/></span>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script>
+    function myFunction(ID) {
+        document.getElementById(ID).key();
+    }
+</script>
+
+<script>
+    function change(event, str) {
+
+        let keypressed = event.which || event.keyCode;
+        document.getElementsByClassName(str).idinnerHTML = String(keypressed);
+
+    }
+</script>
+
+</body>
+
+
+
+
+</html>
+
