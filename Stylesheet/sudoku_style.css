@@ -83,6 +83,231 @@ button:hover {
     100%    {opacity: 0;}
 }
 
+@media screen and (max-width:860px) {
+    .portfolio-thumb {
+        width: 90%;
+    }
+
+
+}
+
+
+@media screen and (max-width:700px) {
+    #code, #console, #grid, #grid_param {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #code {
+        margin-top: -50px;
+    }
+
+    #illustration {
+        overflow: hidden;
+    }
+
+    #resume .inner {
+        width: 85%;
+    }
+
+    #resume .right {
+        display: none;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 480px) {
+
+    #about {
+        background-color: #C26868;
+        height: 1500px;
+        margin-top: -89px;
+    }
+
+    #about .console {
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+
+    #header {
+        line-height: 30px;
+        padding-top: 30px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 15px;
+
+    }
+
+    #header .name {
+        width:40%;
+        float: left;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+
+
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+
+    #header {
+        padding-top: 20px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    #header .name {
+        width:40%;
+        float: left;
+        font-size: 10px;
+        padding-top: 2px;
+        display: inline-block;
+    }
+
+
+
+
+
+    #illustration {
+        padding-bottom: 0;
+    }
+
+    #illustration img {
+        padding-top: 40px;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* this works for my iphone 11 pro */
+
+
+    #header {
+        line-height: 10px;
+        padding-top: 20px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    #header .name {
+        width:40%;
+        padding-top: 2px;
+        float: left;
+        font-size: 12px;
+        display: inline-block;
+    }
+
+
+
+
+
+    #about .inner {
+        padding: 0 10px 0 10px;
+    }
+    #code, #console, #grid, #grid_param {
+        height: 500px;
+    }
+    #console, #grid {
+        padding: 20px 0 0;
+    }
+
+    #code, #grid_param {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border: 1px solid white;
+        grid-gap: 1px;
+        opacity: 1;
+        background: rgba(255, 255, 255, .5);
+    }
+
+    .card::before {
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        opacity: 1;
+    }
+
+    button {
+        margin: 20px 20px;
+        font-size: 10px;
+        background-color: gray;
+    }
+
+    .card.red {
+        animation: white_blink 3s 1;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes white_blink {
+        0%      {background: rgba(255, 255, 255, 0);}
+        25%     {background: rgba(255, 255, 255, .2);}
+        50%     {background: rgba(255, 255, 255, 0);}
+        75%     {background: rgba(255, 255, 255, .2);}
+        100%    {background: rgba(255, 255, 255, 0);}
+    }
+
+}
+
+
+@media only screen and (min-device-width : 374px) and (max-device-width : 376px) {
+    img.icon {
+        width: 30px;
+        height: 30px;
+        margin-left:320px;
+        margin-top: 85px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius:50%;
+        background-color: #fff;
+        opacity: 0.901;
+        z-index: 10000;
+        position: fixed;
+        border: 2px solid black;
+    }
+}
+
+
+
+@media only screen and (min-device-width : 412px) and (max-device-width : 416px) {
+    img.icon {
+        width: 30px;
+        height: 30px;
+        margin-left:360px;
+        margin-top: 85px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius:50%;
+        background-color: #fff;
+        opacity: 0.902;
+        z-index: 10000;
+        position: fixed;
+        border: 2px solid black;
+    }
+}
+
+
+
+
+
 
 
 
