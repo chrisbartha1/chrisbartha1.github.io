@@ -1,67 +1,131 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <title>Sudoku Solver</title>
-    <link rel="stylesheet" href="../Stylesheet/styler.css" type=text/css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="../js/script.js"></script>
-</head>
+    <title>Chris Bartha Computer Science</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Christopher Bartha's resumé and showcase site">
+    <meta name="keywords" content="christopher bartha computerscience" />
+    <meta name="author" content="Christopher Bartha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Stylesheet/style.css" rel="stylesheet">
+    <link href="../Stylesheet/sudoku_style.css" rel="stylesheet">
+    <link href="sudoku_phone.html" rel="next" media="screen and (max-device-width: 600px)">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <script src="../js/page_script.js"></script>
+    <script src="../js/sudoku_script.js"></script>
 
+</head>
 <body>
 
 
-<div>
-    <p>
-        <a target="_self" href="../index.html"><img class="icon" src="../img/portrait.jpg" alt="me"></a>
+<div id="page-wrapper">
+    <!-- Header -->
+
+    <div id="header">
+        <div class="inner name"><a class="author_name" onclick="topFunction()">Christopher Bartha</a></div>
+    </div>
+    <p id="icon">
+        <a href="../index.html">
+            <img class="icon" src="../img/portrait.jpg" alt="me">
+        </a>
     </p>
-    <a target="_self" href="../index.html">
-        <p ID="author">Christopher Bartha</p>
-    </a>
+
 </div>
 
 
 <div id="about"><div class="inner">
     <p>Sudoku Solver</p>
-    <div id="code">
+    <div id="grid_param">
         <div id="grid">
-            <svg height="666px" width="666px">
-                <!-- Horizontal -->
-                <line x1="0" y1="1"   x2="666" y2="1"   style="stroke:black;stroke-width:2"/>
-                <line x1="0" y1="74"  x2="666" y2="74"  style="stroke:black;stroke-width:2"/>
-                <line x1="0" y1="148" x2="666" y2="148" style="stroke:black;stroke-width:2"/>
-                <line x1="0" y1="222" x2="666" y2="222" style="stroke:black;stroke-width:4"/>
-                <line x1="0" y1="296" x2="666" y2="296" style="stroke:black;stroke-width:2"/>
-                <line x1="0" y1="370" x2="666" y2="370" style="stroke:black;stroke-width:2"/>
-                <line x1="0" y1="444" x2="666" y2="444" style="stroke:black;stroke-width:4"/>
-                <line x1="0" y1="518" x2="666" y2="518" style="stroke:black;stroke-width:2"/>
-                <line x1="0" y1="592" x2="666" y2="592" style="stroke:black;stroke-width:2"/>
-                <line x1="0" y1="665" x2="666" y2="665" style="stroke:black;stroke-width:2"/>
+            <div id="container" class="container">
+                <div class="card" data-index="1"></div>
+                <div class="card" data-index="2"></div>
+                <div class="card" data-index="3"></div>
+                <div class="card" data-index="4"></div>
+                <div class="card" data-index="5"></div>
+                <div class="card" data-index="6"></div>
+                <div class="card" data-index="7"></div>
+                <div class="card" data-index="8"></div>
+                <div class="card" data-index="9"></div>
+                <div class="card" data-index="10"></div>
+                <div class="card" data-index="11"></div>
+                <div class="card" data-index="12"></div>
+                <div class="card" data-index="13"></div>
+                <div class="card" data-index="14"></div>
+                <div class="card" data-index="15"></div>
+                <div class="card" data-index="16"></div>
+                <div class="card" data-index="17"></div>
+                <div class="card" data-index="18"></div>
+                <div class="card" data-index="19"></div>
+                <div class="card" data-index="20"></div>
+                <div class="card" data-index="21"></div>
+                <div class="card" data-index="22"></div>
+                <div class="card" data-index="23"></div>
+                <div class="card" data-index="24"></div>
+                <div class="card" data-index="25"></div>
+                <div class="card" data-index="26"></div>
+                <div class="card" data-index="27"></div>
+                <div class="card" data-index="28"></div>
+                <div class="card" data-index="29"></div>
+                <div class="card" data-index="30"></div>
+                <div class="card" data-index="31"></div>
+                <div class="card" data-index="32"></div>
+                <div class="card" data-index="33"></div>
+                <div class="card" data-index="34"></div>
+                <div class="card" data-index="35"></div>
+                <div class="card" data-index="36"></div>
+                <div class="card" data-index="37"></div>
+                <div class="card" data-index="38"></div>
+                <div class="card" data-index="39"></div>
+                <div class="card" data-index="40"></div>
+                <div class="card" data-index="41"></div>
+                <div class="card" data-index="42"></div>
+                <div class="card" data-index="43"></div>
+                <div class="card" data-index="44"></div>
+                <div class="card" data-index="45"></div>
+                <div class="card" data-index="46"></div>
+                <div class="card" data-index="47"></div>
+                <div class="card" data-index="48"></div>
+                <div class="card" data-index="49"></div>
+                <div class="card" data-index="50"></div>
+                <div class="card" data-index="51"></div>
+                <div class="card" data-index="52"></div>
+                <div class="card" data-index="53"></div>
+                <div class="card" data-index="54"></div>
+                <div class="card" data-index="55"></div>
+                <div class="card" data-index="56"></div>
+                <div class="card" data-index="57"></div>
+                <div class="card" data-index="58"></div>
+                <div class="card" data-index="59"></div>
+                <div class="card" data-index="60"></div>
+                <div class="card" data-index="61"></div>
+                <div class="card" data-index="62"></div>
+                <div class="card" data-index="63"></div>
+                <div class="card" data-index="64"></div>
+                <div class="card" data-index="65"></div>
+                <div class="card" data-index="66"></div>
+                <div class="card" data-index="67"></div>
+                <div class="card" data-index="68"></div>
+                <div class="card" data-index="69"></div>
+                <div class="card" data-index="70"></div>
+                <div class="card" data-index="71"></div>
+                <div class="card" data-index="72"></div>
+                <div class="card" data-index="73"></div>
+                <div class="card" data-index="74"></div>
+                <div class="card" data-index="75"></div>
+                <div class="card" data-index="76"></div>
+                <div class="card" data-index="77"></div>
+                <div class="card" data-index="78"></div>
+                <div class="card" data-index="79"></div>
+                <div class="card" data-index="80"></div>
+                <div class="card" data-index="81"></div>
 
-                <!-- Vertical -->
-                <line x1="1"   y1="0" x2="1"   y2="666" style="stroke:black;stroke-width:2"/>
-                <line x1="74"  y1="0" x2="74"  y2="666" style="stroke:black;stroke-width:2"/>
-                <line x1="148" y1="0" x2="148" y2="666" style="stroke:black;stroke-width:2"/>
-                <line x1="222" y1="0" x2="222" y2="666" style="stroke:black;stroke-width:4"/>
-                <line x1="296" y1="0" x2="296" y2="666" style="stroke:black;stroke-width:2"/>
-                <line x1="370" y1="0" x2="370" y2="666" style="stroke:black;stroke-width:2"/>
-                <line x1="444" y1="0" x2="444" y2="666" style="stroke:black;stroke-width:4"/>
-                <line x1="518" y1="0" x2="518" y2="666" style="stroke:black;stroke-width:2"/>
-                <line x1="592" y1="0" x2="592" y2="666" style="stroke:black;stroke-width:2"/>
-                <line x1="665" y1="0" x2="665" y2="666" style="stroke:black;stroke-width:2"/>
+            </div>
 
-                <!-- Boxes -->
-
-                <rect x="0" y="0" width="74" height="74" class ="one">
-                    <foreignObject x="0" y="0" width="74" height="74">
-                        <p xmlns="http://www.w3.org/1999/xhtml">
-                            1
-                        </p>
-                    </foreignObject>
-                </rect>
-
-
-            </svg>
+            <button type="button" onclick="run_solver()">Solve!</button>
+            <button type="button" onclick="reset()">Reset!</button>
         </div>
     </div>
 </div>
@@ -70,3 +134,4 @@
 
 </body>
 </html>
+

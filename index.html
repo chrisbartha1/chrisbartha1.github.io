@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <title>Chris Bartha</title>
-    <link rel="stylesheet" href="Stylesheet/styler.css" type=text/css">
+    <title>Chris Bartha Computer Science</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Christopher Bartha's resumé and showcase site">
+    <meta name="keywords" content="christopher bartha computerscience" />
+    <meta name="author" content="Christopher Bartha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <link href="Stylesheet/style.css" rel="stylesheet">
+    <link href="project/sudoku.html" rel="next">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="js/script.js"></script>
-</head>
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <script src="js/page_script.js"></script>
+    <script src="js/sudoku_script.js"></script>
 
+</head>
 <body>
 
 
-<div>
-    <p>
-        <a target="_self" href="#about"><img class="icon" src="img/portrait.jpg" alt="me"></a>
+<div id="page-wrapper">
+    <!-- Header -->
+    <div id="header">
+        <div class="inner name"><a class="author_name" onclick="topFunction()">Christopher Bartha</a></div>
+    </div>
+    <p id="icon">
+        <a onclick="topFunction()">
+            <img class="icon" src="img/portrait.jpg" alt="Christopher Bartha Computer Science Resumé">
+        </a>
     </p>
-    <a target="_self" href="#about">
-        <p ID="author">Christopher Bartha</p>
-    </a>
+
 </div>
 
-
-
-
-
+<!-- About Me -->
 <div id="about"><div class="inner">
-    <p>I am an aspiring Software Developer</p>
-    <!-- Code on Displayed Console -->
+    <p>I am an aspiring Software Developer</p><br/><br/><br/>
+    <!-- Console -->
     <div id="code">
         <div id="console">
             &gt; Chris.major<br/>
             <span class="answer">&nbsp;&nbsp;=&gt; "Computer Science"<br/><br/></span>
             &gt; Chris.coding.languages<br/>
-            <span class="answer">&nbsp;&nbsp;=&gt; My Coding Languages<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(strong-suit)<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(limited knowledge)<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(surface-level knowledge)<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript&nbsp;&nbsp;(surface-level knowledge)<br/>
+            <span class="answer">   &nbsp;&nbsp;=&gt; My Coding Languages<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(strong-suit)<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(limited knowledge)<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(surface-level knowledge)<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript&nbsp;&nbsp;(surface-level knowledge)<br/>
 							<br/></span>
-            <span class="answer">&nbsp;&nbsp;=&gt; Future Languages<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node.js<br/>
-												 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scala<br/>
+            <span class="answer">   &nbsp;&nbsp;=&gt; Future Languages<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node.js<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scala<br/>
 							<br/></span>
             &gt; Chris.education<br/>
             <span class="answer">&nbsp;&nbsp;=&gt; "California State University, Sonoma"<br/><br/></span>
@@ -51,37 +60,19 @@
             &gt; Chris.interests<br/>
             <span class="answer">&nbsp;&nbsp;=&gt; ["Code", "Socialising", "Learning"]<br/><br/></span>
             &gt; Chris.projects<br/>
-            <span class="answer">&nbsp;&nbsp;=&gt; ["<a target="_self" href="project/sudoku.html">Sudoku Solver</a>",
+            <span class="answer answer_pointer">&nbsp;&nbsp;=&gt; ["<a target="_self" onclick="redirect_html()">SSSSSSudoku Solver</a>",
 								 "<a target="_blank">Blank</a>",
 								 "<a target="_blank">Blank</a>"]<br/><br/></span>
             &gt; Chris.email<br/>
             <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="mailto:chrisbartha@yahoo.com">chrisbartha@yahoo.com</a>"<br/><br/></span>
         </div>
     </div>
+
+    <br/>
 </div>
 </div>
-
-
-<script>
-    function myFunction(ID) {
-        document.getElementById(ID).key();
-    }
-</script>
-
-<script>
-    function change(event, str) {
-
-        let keypressed = event.which || event.keyCode;
-        document.getElementsByClassName(str).idinnerHTML = String(keypressed);
-        console.log(String(keypressed));
-        console.log(keypressed);
-    }
-</script>
 
 </body>
-
-
-
 
 </html>
 
