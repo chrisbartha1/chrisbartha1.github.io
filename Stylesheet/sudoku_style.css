@@ -213,7 +213,14 @@
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* this works for my iphone 11 pro */
-
+    .btn {
+        margin-top: 90px;
+        font-size: 10px;
+        font-weight: lighter;
+        align-items: center;
+        padding: 10px 10px;
+        opacity:0.5;
+    }
 
     #header {
         line-height: 10px;
