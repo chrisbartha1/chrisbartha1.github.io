@@ -54,13 +54,16 @@ body {
     line-height: 100px;
     font-size: 15px;
     z-index: 1000;
+    transition: 0.5s all;
+    opacity: .95;
 }
 
 
-
 #about {
-    /*  background-color: #D57878;*/
-    background-color: #C26868;
+    background-color: #111111;
+    //background-color: #C26868;
+    height: 2000px;
+    ma
     height: 2000px;
     margin-top: -30px;
 }
