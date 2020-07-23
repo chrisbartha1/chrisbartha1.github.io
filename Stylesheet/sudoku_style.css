@@ -16,6 +16,7 @@
 
 .container {
     font-family: sans-serif;
+    
 }
 
 
@@ -44,6 +45,7 @@
     position: relative;
     background-color: #383737;
     cursor: pointer;
+
 }
 .card::before {
     position: absolute;
@@ -55,6 +57,7 @@
     justify-content: center;
     align-items: center;
     font-size: 50px;
+
 }
 .card:hover {
     animation: white_blink 3s 1;
@@ -146,6 +149,7 @@
         background-color: #C26868;
         height: 1500px;
         margin-top: -89px;
+
     }
 
     #about .console {
@@ -219,7 +223,8 @@
         font-weight: lighter;
         align-items: center;
         padding: 10px 10px;
-        opacity:0.5;
+        opacity:1;
+
     }
 
     #header {
@@ -228,6 +233,7 @@
         text-align: left;
         padding-left: 10px;
         padding-bottom: 10px;
+
     }
 
     #header .name {
@@ -250,10 +256,12 @@
     }
     #console, #grid {
         padding: 20px 0 0;
+
     }
 
     #code, #grid_param {
         margin-bottom: 20px;
+
     }
 
     .container {
@@ -263,21 +271,19 @@
         border: 1px solid white;
         grid-gap: 1px;
         opacity: 1;
+
         background: rgba(255, 255, 255, .5);
     }
 
     .card::before {
         font-size: 25px;
+        font-weight: lighter;
         font-family: 'Montserrat', sans-serif;
-        color: black;
+        color: white;
         opacity: 1;
+
     }
 
-    button {
-        margin: 20px 20px;
-        font-size: 10px;
-        background-color: gray;
-    }
 
     .card.red {
         animation: white_blink 3s 1;
@@ -305,15 +311,17 @@
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto auto;
         grid-auto-rows: auto;
+
     }
 
     .card2 {
         position: relative;
         background-color: #383737;
         cursor: pointer;
+
     }
     .card2::before {
-        font-size: 25px;
+        font-size: 250px;
         font-family: 'Montserrat', sans-serif;
         color: black;
         opacity: 1;
