@@ -13,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <script src="../js/sudoku_script.js"></script>
+    <script src="../js/sudoku_script_phone.js"></script>
     <script src="../js/page_script.js"></script>
 
 </head>
@@ -27,8 +27,8 @@
         <div class="inner name"><a class="author_name" onclick="topFunction()">Christopher Bartha</a></div>
     </div>
     <p id="icon">
-        <a href="../index.html">
-            <img class="icon" src="../img/portrait.jpg" alt="me">
+        <a href="index.html">
+            <img class="icon" src="portrait1.jpg" alt="me">
         </a>
     </p>
 
@@ -124,6 +124,19 @@
 
             </div>
 
+            <div id="container2" class="container2">
+                <div class="card2" data-index="1"></div>
+                <div class="card2" data-index="2"></div>
+                <div class="card2" data-index="3"></div>
+                <div class="card2" data-index="4"></div>
+                <div class="card2" data-index="5"></div>
+                <div class="card2" data-index="6"></div>
+                <div class="card2" data-index="7"></div>
+                <div class="card2" data-index="8"></div>
+                <div class="card2" data-index="9"></div>
+            </div>
+
+
             <button type="button" onclick="run_solver()">Solve!</button>
             <button type="button" onclick="reset()">Reset!</button>
         </div>
@@ -131,5 +144,6 @@
 </div>
 
 </div>
+
 </body>
 </html>
