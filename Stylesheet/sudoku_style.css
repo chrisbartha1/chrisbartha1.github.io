@@ -18,13 +18,28 @@
     font-family: sans-serif;
 }
 
-button {
-    font-size: 30px;
-    background-color: gray;
-}
-button:hover {
+
+.btn {
+    margin: 20px 30px;
+    padding: 15px 30px;
+    font-size: 10px;
+    font-weight: 900;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
     cursor: pointer;
+    width: max-content;
+    transition: 0.25s ease;
+    opacity: .2;
 }
+
+.btn:hover {
+    box-shadow: 0 6px 18px 0;
+    color: white;
+    border-color: transparent;
+    background-color: transparent;
+}
+
 .card {
     position: relative;
     background-color: #383737;
