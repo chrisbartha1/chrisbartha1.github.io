@@ -60,10 +60,9 @@ body {
 
 
 #about {
-    background-color: #111111;
+    background-color: #45487B;
     //background-color: #C26868;
     height: 2000px;
-    ma
     height: 2000px;
     margin-top: -30px;
 }
@@ -385,8 +384,6 @@ img.icon:hover {
 @media (max-width: 480px) {
 
     #about {
-        /*  background-color: #D57878;*/
-        background-color: #C26868;
         height: 1500px;
         margin-top: -90px;
     }
