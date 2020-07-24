@@ -63,15 +63,21 @@ function card2() {
         data_index = Number(this.dataset.index);
     } else if(this.classList.contains("card2")) {
         data_index_2 = Number(this.dataset.index);
+        add_class(data_index_2);
+
         row = Math.floor((data_index - 1)/9);
         col = (data_index-1) % 9;
         if(is_safe(grid, row, col, data_index_2)) {
             remove();
+            document.getElementsByClassName("card").item(data_index-1).classList.remove("red");
+            /*grid[row][col] = Number(data_index_2);
+            add_class(data_index_2);
+            
             document.getElementsByClassName("card").classList.remove("red");
             document.getElementsByClassName("card2").classList.remove("red");
             
             
-            /*
+            
             let card2 = document.getElementsByClassName("card2").classList;
             card2.forEach(num_pad => {
                 if(num_pad.contains("red")) {
