@@ -184,4 +184,3 @@ function solve(grid) {
 }
 
 
-cards.forEach(card => card.addEventListener("click", click_key_event));
